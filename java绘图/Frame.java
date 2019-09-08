@@ -27,7 +27,7 @@ public class Frame extends JPanel{
 		ButtonListener buttonListener=new ButtonListener();
 		
 		//选择形状
-		String []shape= {"圆形","直线","矩形"};
+		String []shape= {"Circle","Line","Rectangle"};
 		for(int i=0;i<shape.length;i++) {
 			JButton colorChooser=new JButton(shape[i]);
 			colorChooser.addActionListener(new ActionListener(){

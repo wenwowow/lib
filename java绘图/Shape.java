@@ -24,17 +24,17 @@ public class Shape {
 	}
 	public void repaint(Graphics g) {
 		switch(typeName) {
-		case"直线":
+		case"Line":
 		{
 			g.drawLine(x1, y1, x2, y2);
 			break;
 		}
-		case"圆形":
+		case"Circle":
 		{
 			g.drawOval(Math.min(x1, x2),Math.min(y1, y2),Math.abs(x1-x2),Math.abs(y1-y2));
 			break;
 		}
-		case"矩形":
+		case"Rectangle":
 		{
 			g.drawRect(Math.min(x1, x2),Math.min(y1, y2),Math.abs(x1-x2),Math.abs(y1-y2));
 			break;
