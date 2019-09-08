@@ -36,17 +36,17 @@ public class ButtonListener implements MouseListener, ActionListener{
 	public void mouseReleased(MouseEvent e) {
 		x2=e.getX();
 		y2=e.getY();
-		if("Line".contentEquals(Commend)) {
+		if("直线".contentEquals(Commend)) {
 			g.drawLine(x1,y1,x2,y2);
-			shapearry[shapenum++]=new Shape(x1,y1,x2,y2,"Line");
+			shapearry[shapenum++]=new Shape(x1,y1,x2,y2,"直线");
 		}
-		if("Circle".contentEquals(Commend)) {
+		if("圆形".contentEquals(Commend)) {
 			g.drawOval(Math.min(x1, x2),Math.min(y1, y2),Math.abs(x1-x2),Math.abs(y1-y2));			
-			shapearry[shapenum++]=new Shape(x1,y1,x2,y2,"Circle");
+			shapearry[shapenum++]=new Shape(x1,y1,x2,y2,"圆形");
 		}
-		if("Rectangle".contentEquals(Commend)) {
+		if("矩形".contentEquals(Commend)) {
 			g.drawRect(Math.min(x1, x2),Math.min(y1, y2),Math.abs(x1-x2),Math.abs(y1-y2));		
-			shapearry[shapenum++]=new Shape(x1,y1,x2,y2,"Rectangle");
+			shapearry[shapenum++]=new Shape(x1,y1,x2,y2,"矩形");
 		}
 	}
 	
