@@ -13,6 +13,9 @@ public class Main {
                 if (method.getName().equals("eat")) {
                     System.out.println("today,eating " + args[0]);
                 }
+                if (method.getName().equals("drink")) {
+                    System.out.println("today,drinking " + args[0]);
+                }
                 return null;
             }
         };
@@ -21,5 +24,6 @@ public class Main {
             new Class[] { Day.class }, // 传入要实现的接口
             handler); // 传入处理调用方法的InvocationHandler
         day.eat("apple");
+        day.drink("water");
     }
 }
