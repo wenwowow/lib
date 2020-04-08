@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<beans>
-   <bean id="A" class="Bui.SubMealBuilderA"/>
-   <bean id="color" class="Bri.Pink"/>
-   <bean id="pen" class="Bri.BigPen"/>
-   <bean id="visitor" class="Vis.Customer"/>
-</beans> 
